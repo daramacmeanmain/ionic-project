@@ -1,3 +1,5 @@
+<!-- CREATING NEW TASK -->
+
 <body ng-controller="appCtrl">
     <ion-view view-title="Current Tasks">
         <ion-content>
@@ -6,9 +8,9 @@
                     Create New Task
                 </button>
                     <ion-item ng-repeat="currTask in currTasks">
-                        {{ currTask.taskItem }}
-                        <button class="button button-icon ion-checkmark-round" ng-click="null"></button>
-                        <button class="button button-icon ion-trash-a" ng-click="null"></button>
+                        <ion-checkbox ng_repeat="checkedItem in checkedTasks" ng-model="checkedItem.checked">
+                         {{ currTask.taskItem }}
+                        </ion-checkbox>
                 </ion-item>
             </ion-list>
         </ion-content>
