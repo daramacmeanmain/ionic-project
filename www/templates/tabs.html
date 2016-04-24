@@ -1,0 +1,66 @@
+<body ng-controller="appCtrl">
+        <!--
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-stable">
+                <ion-nav-back-button>
+                </ion-nav-back-button>
+                    <ion-nav-buttons side="left">
+                        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                        </button>
+                    </ion-nav-buttons>
+            </ion-nav-bar>
+
+    <!-- TABS -->
+
+    <ion-tabs class="tabs-icon-top tabs-color-active-positive">
+    <!-- Tab One -->
+        <ion-tab title="Current" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/one">
+        <ion-nav-view name="tab-one"></ion-nav-view>
+        </ion-tab>
+
+    <!-- Tab Two -->
+        <ion-tab title="Completed" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/two">
+        <ion-nav-view name="tab-two"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+   <!-- </ion-side-menu-content>
+        
+     SIDE MENU
+        
+        <ion-side-menu side="left">
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">Task List</h1>
+        </ion-header-bar>
+            
+        </ion-side-menu>
+    </ion-side_menus>
+
+    <!-- TASK SCRIPT -->
+
+    <script id="templates/tabs.html" type="text/ng-template">
+        <ion-modal-view>
+            <ion-header-bar class="bar bar-header bar-positive">
+                <h1 class="title">New Task</h1>
+                <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+            </ion-header-bar>
+            <ion-content class="padding">
+                <!--<form ng-submit="submit()" ng-controller="appCtrl">-->
+                    <div class="list">
+                        <label class="item item-input">
+                            <span class="input-label">Task Name</span>
+                            <input ng-model="taskItem.newTask" type="text">
+                        </label>
+                        <label class="item item-input">
+                            <span class="input-label">Date</span>
+                            <input ng-model="taskItem.newDate" type="date">
+                        </label>
+                        <button class="button button-full button-positive" ng-click="createTask(taskItem)">Create</button>
+                    </div>
+                <!--</form>-->
+            </ion-content>
+        </ion-modal-view>
+    </script>
+    
+    
+   
+</body>

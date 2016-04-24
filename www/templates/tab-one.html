@@ -1,0 +1,16 @@
+<body ng-controller="appCtrl">
+    <ion-view view-title="Current Tasks">
+        <ion-content>
+            <ion-list>
+                <button class="button button-icon ion-compose" ng-click="modal.show()">
+                    Create New Task
+                </button>
+                    <ion-item ng-repeat="currTask in currTasks">
+                        {{ currTask.taskItem }}
+                        <button class="button button-icon ion-checkmark-round" ng-click="null"></button>
+                        <button class="button button-icon ion-trash-a" ng-click="null"></button>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-view>
+</body>
