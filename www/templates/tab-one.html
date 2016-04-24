@@ -7,7 +7,8 @@
                 <button class="button button-icon ion-compose" ng-click="modal.show()">
                     Create New Task
                 </button>
-                    <ion-item ng-repeat="currTask in currTasks">
+                <!-- Checkbox adapted from http://ionicframework.com/docs/api/directive/ionCheckbox/ -->
+                    <ion-item ng-repeat="currTask in currTasks"> 
                         <ion-checkbox ng_repeat="checkedItem in checkedTasks" ng-model="checkedItem.checked">
                          {{ currTask.taskItem }}
                         </ion-checkbox>
